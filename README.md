@@ -3,7 +3,7 @@ Kotlin DSL wrapper for Android AlertDialog
 
 ## Basic Usage
 ```kotlin
-alertDialog {
+val dialog = alertDialog {
     title { "TEST" }
     message { "TEST" }
     positiveClick {
@@ -19,6 +19,8 @@ alertDialog {
         label { "Neutral" }
     }
 }
+
+dialog.show()
 ```
 
 ## or create class level property by using `buildAlertDialog`
