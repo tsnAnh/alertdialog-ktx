@@ -2,7 +2,6 @@ package dev.tsnanh.dialogktx
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.res.ResourcesCompat
 import com.google.android.material.snackbar.Snackbar
 import dev.tsnanh.alertdialog.ktx.buildAlertDialog
 
@@ -12,7 +11,6 @@ class MainActivity : AppCompatActivity() {
         message { "TEST" }
         positiveClick {
             label { "OK" }
-            icon { ResourcesCompat.getDrawable(resources, R.drawable.ic_baseline_check_24, null) }
             onClick {
                 Snackbar.make(window.decorView, R.string.app_name, Snackbar.LENGTH_LONG).show()
             }
